@@ -1,6 +1,7 @@
 'use strict'
 
 // Menu
+
 const hamburger = document.querySelector('.hamburger'),
       closeMenu = document.querySelector('.promo__close'),
       promoMenu = document.querySelector('.promo__menu'),
@@ -9,9 +10,11 @@ const hamburger = document.querySelector('.hamburger'),
 hamburger.addEventListener('click', () => {
     promoMenu.classList.add('show');
     overflow.classList.add('show');
+    document.body.style.overflow = 'hidden';
 });
 
 closeMenu.addEventListener('click', () => {
     overflow.classList.remove('show');
     promoMenu.classList.remove('show');
+    document.body.style.overflow = '';
 })
