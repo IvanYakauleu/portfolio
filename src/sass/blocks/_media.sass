@@ -2,6 +2,16 @@
     .social
         display: none
 
+@media (min-width: 1200px)
+    .portfolio
+        &__wrapper
+            a
+                &:nth-child(4)
+                    grid-row: 1/3
+                    grid-column: 4/5
+                &:nth-child(6)
+                    grid-column: 2/4
+
 @media (max-width: 1199.98px)
     .promo
         .container
@@ -29,6 +39,11 @@
             grid-template-columns: repeat(2, 350px)
             justify-content: space-around
 
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(3, 280px)
+            justify-content: center
+            gap: 5px
 
 @media (max-width: 991.98px)
     .promo
@@ -56,6 +71,10 @@
     .skills
         &__wrapper
             grid-template-columns: repeat(2, 270px)
+
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(2, 280px)
 
 @media (max-width: 767.98px)
     .promo
@@ -89,6 +108,11 @@
     .skills
         &__scales
             grid-template-columns: repeat(1, 350px)
+
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(2, 250px)
+            grid-template-rows: repeat(3, 250px)
 
 @media (max-width: 575.98px)
     .promo
@@ -132,4 +156,10 @@
             grid-template-columns: 270px
         &__scales
             grid-template-columns: 280px
+
+    .portfolio
+        padding-top: 60px
+        &__wrapper
+            grid-template-columns: 280px
+            grid-template-rows: 280px
 
