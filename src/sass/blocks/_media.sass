@@ -76,6 +76,12 @@
         &__wrapper
             grid-template-columns: repeat(2, 280px)
 
+    .price
+        &__wrapper
+            grid-template-columns: repeat(2, 300px)
+        &__descr
+            font-size: 11px
+
 @media (max-width: 767.98px)
     .promo
         padding-top: 150px
@@ -113,6 +119,12 @@
         &__wrapper
             grid-template-columns: repeat(2, 250px)
             grid-template-rows: repeat(3, 250px)
+    
+    .price
+        &__wrapper
+            grid-template-columns: 340px
+        &__descr
+            font-size: 12px
 
 @media (max-width: 575.98px)
     .promo
@@ -162,4 +174,14 @@
         &__wrapper
             grid-template-columns: 280px
             grid-template-rows: 280px
+    
+    .price
+        &__wrapper
+            margin-top: 20px
+            grid-template-columns: 280px
+            grid-template-rows: repeat(2, 75px)
+        &__title
+            padding-left: 20px
+            &::before
+                left: -7px
 
