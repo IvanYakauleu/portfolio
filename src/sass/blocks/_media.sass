@@ -45,6 +45,13 @@
             justify-content: center
             gap: 5px
 
+    .contacts
+        &__wrapper
+            grid-template-columns: 350px 500px
+        &__form
+            grid-template-columns: repeat(2, 240px)
+            grid-template-rows: 35px 190px
+
 @media (max-width: 991.98px)
     .promo
         .activ
@@ -81,6 +88,12 @@
             grid-template-columns: repeat(2, 300px)
         &__descr
             font-size: 11px
+
+    .contacts
+        &__wrapper
+            grid-template-columns: 250px 450px
+        &__form
+            grid-template-columns: repeat(2, 210px)
 
 @media (max-width: 767.98px)
     .promo
@@ -125,6 +138,14 @@
             grid-template-columns: 340px
         &__descr
             font-size: 12px
+
+    .contacts
+        &__wrapper
+            grid-template-columns: 80%
+        &__photo
+            display: none
+        &__form
+            grid-template-columns: repeat(2, 210px)
 
 @media (max-width: 575.98px)
     .promo
@@ -184,4 +205,18 @@
             padding-left: 20px
             &::before
                 left: -7px
+
+    .contacts
+        &__form
+            grid-template-columns: 240px
+            grid-template-rows: 35px 35px 143px
+            justify-content: center
+        &__textarea
+            grid-column: 1/2
+        &__btn
+            justify-self: center
+        &__socialInfo
+            font-size: 13px
+        &__text
+            margin-top: 20px
 
