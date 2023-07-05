@@ -1,0 +1,114 @@
+@media (max-width: 1300px)
+    .social
+        display: none
+
+@media (max-width: 1199.98px)
+    .promo
+        .container
+            max-width: 992px
+        &__wrapper
+            padding-left: 50px
+        .activ
+            margin-left: 350px
+    
+    .about-me
+        &__wrapper
+            grid-template-columns: 350px 550px
+            grid-template-rows: 550px
+        &__items
+            grid-template-columns: repeat(2, 275px)
+    
+    .title
+        &__second
+            font-size: 28px
+
+
+@media (max-width: 991.98px)
+    .promo
+        .activ
+            margin-left: 300px
+    
+    .about-me
+        &__wrapper
+            grid-template-columns: 250px 435px
+            grid-template-rows: 630px
+        &__items
+            grid-template-columns: repeat(2, 217px)
+        &__item
+            div
+                padding-left: 8px
+    
+    .title
+        &__second
+            line-height: 50px
+
+    .experience
+        &__wrapper
+            grid-template-columns: repeat(2, 280px)
+
+@media (max-width: 767.98px)
+    .promo
+        padding-top: 150px
+        .activ
+            margin-left: 0px
+    
+    .about-me
+        padding-top: 60px
+        &__wrapper
+            justify-content: center
+            grid-template-columns: 95%
+            grid-template-rows: 340px auto
+        &__photo
+            width: 300px
+            height: 340px
+            justify-self: center
+        &__info
+            padding-top: 50px
+        &__items
+            grid-template-columns: repeat(2, 250px)
+            justify-content: center
+    
+    .experience
+        &__wrapper
+            grid-template-columns: 80%
+        &__items
+            &:nth-child(2)
+                margin-top: 30px       
+
+@media (max-width: 575.98px)
+    .promo
+        padding-top: 150px
+        &__wrapper
+            padding-left: 10px
+        &__title
+            font-size: 26px
+            margin-top: 10px
+            line-height: normal
+        .hamburger
+            right: 10px
+            top: 10px
+        &__menu
+            width: 270px
+            padding: 100px 0px 20px 30px
+
+    .about-me
+        &__items
+            grid-template-columns: 250px
+    .title
+        &__second
+            font-size: 22px
+
+    .experience
+        &__wrapper
+            padding-top: 30px
+        &__title
+            &::before
+                left: -30px
+        &__item
+            &::before
+                left: -23px
+        &__date
+            &::before
+                left: -69px
+                width: 26px
+
