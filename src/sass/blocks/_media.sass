@@ -21,6 +21,13 @@
     .title
         &__second
             font-size: 28px
+    
+    .skills
+        &__wrapper
+            grid-template-columns: repeat(3, 270px)
+        &__scales
+            grid-template-columns: repeat(2, 350px)
+            justify-content: space-around
 
 
 @media (max-width: 991.98px)
@@ -45,6 +52,10 @@
     .experience
         &__wrapper
             grid-template-columns: repeat(2, 280px)
+
+    .skills
+        &__wrapper
+            grid-template-columns: repeat(2, 270px)
 
 @media (max-width: 767.98px)
     .promo
@@ -73,7 +84,11 @@
             grid-template-columns: 80%
         &__items
             &:nth-child(2)
-                margin-top: 30px       
+                margin-top: 30px     
+
+    .skills
+        &__scales
+            grid-template-columns: repeat(1, 350px)
 
 @media (max-width: 575.98px)
     .promo
@@ -111,4 +126,10 @@
             &::before
                 left: -69px
                 width: 26px
+    
+    .skills
+        &__wrapper
+            grid-template-columns: 270px
+        &__scales
+            grid-template-columns: 280px
 
